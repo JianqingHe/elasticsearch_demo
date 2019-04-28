@@ -1,0 +1,17 @@
+spring:
+  data:
+    elasticsearch:
+      cluster-nodes: 10.168.1.10:9300
+      cluster-name: elasticsearch
+      repositories:
+        enabled: true
+
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 8099
+  connection-timeout: 5000ms
+  servlet:
+    context-path: /es
